@@ -1,4 +1,40 @@
-body{
+* {
   margin: 0px;
   padding: 0px;
+}
+
+body {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url("./src/imgs/bg_dots.png");
+  min-height: 100vh;
+}
+
+header {
+  height: 80px;
+  background-color: #171a21;
+  display: flex;
+  padding: 0px 10em 0px 10em;
+}
+
+header .steam-logo {}
+
+.main-block {
+  background-color: #000000aa;
+  margin: 0px 10em 0px 10em;
+  height: 100vh;
+}
+
+@media (max-width: 480px) {
+  .main-block {
+    margin: 0px 1em 0px 1em;
+  }
+
+}
+
+@media (max-width: 992px) {
+  .main-block {
+    margin: 0px 1em 0px 1em;
+  }
 }
