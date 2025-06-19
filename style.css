@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=Roboto+Slab:wght@100..900&display=swap');
+
 * {
   margin: 0px;
   padding: 0px;
+  font-family: "Roboto Slab", serif;
 }
 
 body {
@@ -15,18 +18,82 @@ header {
   height: 80px;
   background-color: #171a21;
   display: flex;
-  padding: 0px 10em 0px 10em;
+  padding: 0px 15em 0px 15em;
+  justify-content: space-between;
 }
 
-header .steam-logo {}
+header .steam-logo {
+  max-width: 150px;
+}
+
+header .user-profile {
+  display: flex;
+}
+
+header .user-profile .arrow {
+  transition: 1s easy all;
+}
+
+header .user-profile .visible-part {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+  position: static;
+}
+
+.visible-part h3 {
+  color: #c1bfbc;
+}
+
+.visible-part img {
+  max-width: 55px;
+  border: #c1bfbc 2px solid;
+}
+
+.user-profile .dropdown-menu {
+  display: flex;
+  opacity: 0;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  background-color: #1b2838;
+  width: fit-content;
+  height: 0px;
+  top: 55px;
+  position: absolute;
+  transition: all 0.3s ease;
+}
+
+.user-profile .dropdown-menu.open {
+  opacity: 1;
+  height: 80px;
+}
+
+.user-profile .dropdown-menu a {
+  color: #c1bfbc;
+  padding: 5px;
+  width: fit-content;
+  text-decoration: none;
+}
+
+.user-profile .dropdown-menu a:hover {
+  color: #e9e6e3;
+  padding: 5px;
+  text-decoration: none;
+}
 
 .main-block {
-  background-color: #000000aa;
-  margin: 0px 10em 0px 10em;
+  background-color: #000000bb;
+  margin: 0px 15em 0px 15em;
   height: 100vh;
 }
 
 @media (max-width: 480px) {
+  header {
+    padding: 0px 1em 0px 1em;
+  }
+
   .main-block {
     margin: 0px 1em 0px 1em;
   }
