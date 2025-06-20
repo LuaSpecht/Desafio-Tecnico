@@ -90,11 +90,15 @@ header .user-profile .dropdown-menu a:hover {
   text-decoration: none;
 }
 
-.information-section {
+.hero-section {
   background: linear-gradient(#38122daa, #2d0f25cc, #1b2822cc);
   margin: 0px 15em 0px 15em;
   height: 100vh;
   padding: 5%;
+}
+
+.profile-section {
+  margin-bottom: 50px;
 }
 
 .section-title {
@@ -164,6 +168,8 @@ header .user-profile .dropdown-menu a:hover {
   width: 54px;
   height: 54px;
 }
+
+
 
 @media (max-width: 992px) {
   header {
