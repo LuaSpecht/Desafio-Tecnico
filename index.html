@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
   <meta charset="UTF-8">
@@ -22,8 +22,8 @@
     <div class="user-profile">
       <div class="visible-part">
         <div class="text-header-box">
-          <p class="user-name">Garrafa_Pet<i class="arrow ph ph-caret-down"></i></p>
-          <p class="account-money">R$12,00</p>
+          <p class="user-name" id="header-username">Garrafa_Pet</i></p>
+          <p class="account-money">R$12,00 <i class="arrow ph ph-caret-down"></i></p>
         </div>
         <img src="./src/imgs/profile-images/verissimo.jpg"
           alt="Foto de perfil do usuário, sendo um personagem de sua escolha" class="profile-image">
@@ -45,7 +45,7 @@
         </div>
         <div class="my-data">
           <div class="my-name">
-            <h2 class="username" id="user-username">Garrafa_Pet</h2>
+            <h2 class="username" id="profile-username">Garrafa_Pet</h2>
             <div class="level-board"> Nível <span class="xp-box-level">11</span></div>
           </div>
           <div class="my-insignia">
@@ -64,26 +64,26 @@
       <form action="" method="post">
         <div class="info-box">
           <p class="info-title" id="type-username">Apelido:</p>
-          <p class="username user-info" id="username">Garrafa_Pet</p>
+          <p class="username user-info" id="username"></p>
 
           <input class="text-box open" type="text" name="username" placeholder="Digite seu novo nome de usuário"
             id="user-actual-username">
         </div>
         <div class="info-box">
           <p class="info-title" id="type-name">Nome Completo:</p>
-          <p class="user-info" id="fullname">João Felipe Specht Bragante</p>
+          <p class="user-info" id="fullname"></p>
           <input class="text-box" type="text" name="fullname" placeholder="Digite seu nome completo"
             id="user-actual-fullname">
         </div>
         <div class="info-box">
           <p class="info-title" id="type-email">E-Mail:</p>
-          <p class="user-info" id="user-email">gato_quebrado@gmail.com</p>
+          <p class="user-info" id="user-email"></p>
           <input class="text-box" type="email" name="email" placeholder="seuemail@email.com" id="user-actual-email">
         </div>
         <div class="info-box">
           <p class="info-title" id="type-cellphone">Telefone:</p>
-          <p class="user-info" id="phone">(41)99999-9999</p>
-          <input class="text-box" type="number" name="cellphone" placeholder="DDD + 999999999 (somente números)"
+          <p class="user-info" id="phone"></p>
+          <input class="text-box" type="text" name="cellphone" placeholder="Digite seu telefone:"
             id="user-actual-number">
         </div>
         <button class="information-btn" type="button" id="switch-button">Editar</button>
