@@ -45,7 +45,7 @@
         </div>
         <div class="my-data">
           <div class="my-name">
-            <h2 class="username">Garrafa_Pet</h2>
+            <h2 class="username" id="user-username">Garrafa_Pet</h2>
             <div class="level-board"> Nível <span class="xp-box-level">11</span></div>
           </div>
           <div class="my-insignia">
@@ -59,7 +59,36 @@
         </div>
       </div>
     </main>
+    <section class="information-section">
+      <h1 class="section-title"> Informações Do Usuário</h1>
+      <form action="" method="post">
+        <div class="info-box">
+          <p class="info-title" id="type-username">Apelido:</p>
+          <p class="username user-info" id="username">Garrafa_Pet</p>
 
+          <input class="text-box open" type="text" name="username" placeholder="Digite seu novo nome de usuário"
+            id="user-actual-username">
+        </div>
+        <div class="info-box">
+          <p class="info-title" id="type-name">Nome Completo:</p>
+          <p class="user-info" id="fullname">João Felipe Specht Bragante</p>
+          <input class="text-box" type="text" name="fullname" placeholder="Digite seu nome completo"
+            id="user-actual-fullname">
+        </div>
+        <div class="info-box">
+          <p class="info-title" id="type-email">E-Mail:</p>
+          <p class="user-info" id="user-email">gato_quebrado@gmail.com</p>
+          <input class="text-box" type="email" name="email" placeholder="seuemail@email.com" id="user-actual-email">
+        </div>
+        <div class="info-box">
+          <p class="info-title" id="type-cellphone">Telefone:</p>
+          <p class="user-info" id="phone">(41)99999-9999</p>
+          <input class="text-box" type="number" name="cellphone" placeholder="DDD + 999999999 (somente números)"
+            id="user-actual-number">
+        </div>
+        <button class="information-btn" type="button" id="switch-button">Editar</button>
+      </form>
+    </section>
   </section>
   <script src="app.js"></script>
 </body>
